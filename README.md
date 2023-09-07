@@ -37,7 +37,7 @@ VALUES
 
 Now that we have the tables and data set up, let's provide examples of different types of joins:
 
-**Left Join**: Returns all rows from the left table (`Student`) and the matching rows from the right table (`Language`). If there's no match, NULL values are returned for columns from the right table.
+**Left Join**: Returns all rows from the left table (`Student`) and the matching rows from the right table (`Language`). If there's no match, `NULL` values are returned for columns from the right table.
 
 ```SQL
 SELECT Student.name, Student.age, Language.name
@@ -47,7 +47,7 @@ LEFT JOIN Language ON Student.student_id = Language.student_id;
 
 <img width="397" alt="image" src="https://github.com/sureshmelvinsigera/SQL-joins/assets/20378525/bfad6d03-9391-4a31-9e6e-505b6efbe037">
 
-**Right Join**: Returns all rows from the right table (`Language`) and the matching rows from the left table (`Student`). If there's no match, NULL values are returned for columns from the left table.
+**Right Join**: Returns all rows from the right table (`Language`) and the matching rows from the left table (`Student`). If there's no match, `NULL` values are returned for columns from the left table.
 
 ```SQL
 SELECT Student.name, Student.age, Language.name
